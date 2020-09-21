@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validate DBP</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <aside></aside>
+    <main>
+      <form id="dkh-signup-form">
+        <div class="dkh-form-header">
+          <div>
+            <small>Registrate con</small>
+            <div class="dkh-form-header__social-wrapper">
+              <button type="button" class="dkh-btn dkh-btn-icon dkh-btn-github">
+                <i class="fab fa-github fa-lg"></i>
+                Github
+              </button>
+              <button
+                type="button"
+                class="dkh-btn dkh-btn-icon dkh-btn-twitter"
+              >
+                <i class="fab fa-twitter fa-lg"></i>
+                Twitter
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="dkh-form-body">
+          <small>O resgistrate manualmente con un email</small>
+          <div class="dkh-form-field">
+            <fieldset class="name">
+              <input
+                class="dkh-form-field__input"
+                name="name"
+                type="string"
+                id="name"
+                placeholder="Nombre"
+              />
+              <div
+                id="MessagesErrorName"
+                class="dkh-form-field__messages"
+              ></div>
+            </fieldset>
+          </div>
+          <div class="dkh-form-field">
+            <fieldset class="date">
+              <input
+                class="dkh-form-field__input"
+                name="date"
+                type="date"
+                id="date"
+                placeholder="Fecha de nacimiento"
+              />
+              <div
+                id="MessagesErrorDate"
+                class="dkh-form-field__messages"
+              ></div>
+            </fieldset>
+          </div>
+          <div class="dkh-form-field">
+            <fieldset class="email">
+              <input
+                class="dkh-form-field__input"
+                name="email"
+                type="string"
+                id="email"
+                placeholder="Email"
+              />
+              <div
+                id="MessagesErrorEmail"
+                class="dkh-form-field__messages"
+              ></div>
+            </fieldset>
+          </div>
+          <div class="dkh-form-field">
+            <fieldset class="password">
+              <input
+                class="dkh-form-field__input"
+                name="password"
+                type="password"
+                id="password"
+                placeholder="Password"
+              />
+              <div
+                id="MessagesErrorPassword"
+                class="dkh-form-field__messages"
+              ></div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="dkh-form-footer">
+          <button class="dkh-btn dkh-btn-primary" type="submit">Sign Up</button>
+        </div>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
